@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+
+<html lang = "en">
+
+<head>
+	<link rel = "stylesheet" media = "all" type="text/css" href = "css/styles.css"/> 
+	<link rel = "stylesheet" media = "all" type="text/css" href = "css/jquery-ui.css"/>
+	<link rel = "stylesheet" media = "all" type="text/css" href = "css/jquery.lightbox.css"/>
+	<title>Projects</title>
+	<meta name = "author" content = "Bradley Chen">
+	<meta name = "keywords" content = "Carnegie Mellon University, Information Systems, resume">
+	<meta name = "description" content = "Bradley Chen Professional Website">
+	<script type = "text/javascript" src = "js/jquery-3.3.1.min.js"></script>
+	<script type = "text/javascript" src = "js/scripts.js"></script>
+	<script type = "text/javascript" src = "js/jquery-ui.js"></script>
+	<script type = "text/javascript" src = "js/jquery.lightbox.min.js"></script>
+	<script>
+		$(function() {
+			$( "#accordion" ).accordion();
+		});
+	</script>
+	<script>
+		$(function(){
+			$("#tabs").tabs({
+				event: "mouseover"
+			});
+		});
+	</script>
+
+	<script type = "text/javaScript">
+		$(function() {
+			$("#content-gallery a").lightBox();
+		});
+	</script>
+	
+
+			<style>
+			table {
+				border: 3px solid;
+				border-collapse: collapse;
+				width: 75%;
+				border-style: solid;
+				border-width: 3px;
+				border-color: #24677F;
+				border-spacing: 3px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			td, th{
+				border: 1px solid #3AA5CC;
+			}
+		</style>
+
+
+	</head>
+
+	<body>
+		<div id = "container">
+			<div id = "top_row">
+				<header>
+					<h1>Bradley Chen</h1>
+					<h3>Carnegie Mellon University, Information Systems</h3>
+
+				</header>
+
+
+				<nav>
+
+					<a href = "index.html">About</a>
+					<a href = "projects.html" class = "selected">Projects</a>
+					<a href = "contact.html">Contact</a>
+				</nav>
+			</div>
+
+			<div id = "content">
+				<h3>Projects</h3>
+				<div id = "accordion">
+					<h4>
+						Leap Scroller
+					</h4>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis massa justo, sed molestie velit sagittis sit amet. Mauris dictum ipsum ut ultricies molestie. Donec aliquam erat sed leo sollicitudin fringilla.</p>
+					</div>
+					<h4>
+						VESGEN Data Analysis Tool
+					</h4>
+					<div>
+						<p>Fusce rhoncus orci vitae mauris consequat, quis commodo magna ullamcorper. Aenean non libero nec massa sollicitudin laoreet nec finibus nibh. Vivamus id fermentum nisl, non rutrum leo. Pellentesque hendrerit, lorem ut malesuada vulputate, nisl lacus dictum odio, a pharetra enim mi sit amet sem. Pellentesque facilisis vehicula ligula venenatis accumsan. </p>
+					</div>
+					<h4>
+						Case Study Project
+					</h4>
+					<div>
+						<p>In porttitor purus nisl, non vehicula turpis bibendum et. Pellentesque sed ligula at sem porttitor pellentesque vitae id orci. Morbi lobortis lectus neque, in semper magna eleifend vel. Pellentesque efficitur leo augue, sed sodales felis vestibulum at.</p>
+						<ul>
+							<li>List item one</li>
+							<li>List item two</li>
+							<li>List item three</li>
+						</ul>
+					</div>
+				</div>
+				<div id = "tabs">
+					<ul>
+						<li><a href = "#tabs-1">Leap Scroller</a></li>
+						<li><a href = "#tabs-2">VESGEN Data Analysis Tool</a></li>
+						<li><a href = "#tabs-3">Case Study Project</a></li>
+					</ul>
+					<div id = "tabs-1">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis massa justo, sed molestie velit sagittis sit amet. Mauris dictum ipsum ut ultricies molestie. Donec aliquam erat sed leo sollicitudin fringilla. </p>
+					</div>
+					<div id = "tabs-2">
+						<p>Fusce rhoncus orci vitae mauris consequat, quis commodo magna ullamcorper. Aenean non libero nec massa sollicitudin laoreet nec finibus nibh. Vivamus id fermentum nisl, non rutrum leo. Pellentesque hendrerit, lorem ut malesuada vulputate, nisl lacus dictum odio, a pharetra enim mi sit amet sem. Pellentesque facilisis vehicula ligula venenatis accumsan. </p>
+					</div>
+					<div id = "tabs-3">
+						<p>In porttitor purus nisl, non vehicula turpis bibendum et. Pellentesque sed ligula at sem porttitor pellentesque vitae id orci. Morbi lobortis lectus neque, in semper magna eleifend vel. Pellentesque efficitur leo augue, sed sodales felis vestibulum at.</p>
+					</div>
+				</div>
+				<div id = "content-gallery">
+					<div id = "galleryThumbnail"><div id = "thmbnlShadow">
+					<a href = "images/image1.jpg" title = "The case analysis project evaluated a variety of enterprise layer concepts at SmoothPay.">
+					<img src = "images/image1thumb.jpg" alt = "image 1"/></a></div></div>
+					
+					<div id = "galleryThumbnail"><div id = "thmbnlShadow">
+					<a href = "images/image2.jpg" title = "The web development project utilized several front-end web development techniques using HTML, CSS, and JavaScript.">
+					<img src = "images/image2thumb.jpg" alt = "image 2"></a></div></div>
+
+					<div id = "galleryThumbnail"><div id = "thmbnlShadow">
+					<a href = "images/image3.jpg" title = "The database project included an entity relationship diagram and several data creation and manipulation techniques in MySQL.">
+					<img src = "images/image3thumb.jpg" alt = "iamge 3"></a></div></div>
+
+				</div>
+				<table cellpadding = "2">
+					<tr>
+						<th colspan = "3" style="height:40px">Projects</th>
+					</tr>
+					<tr>
+						<th style="height:40px">Title</th>
+						<th style="height:40px">Organization</th>
+						<th style="height:40px">Project Date</th>
+					</tr>
+					<tr onmouseover="showDescription('Developed a side-scrolling platform video game in Python controlled with a Leap Motion Controller, a computer hardware sensor device capable of accepting hand and finger motion as input.');" onmouseout="hideDescription('hidden');">
+						<td style="text-align:center">Leap Scroller</td>
+						<td style="text-align:center">Carnegie Mellon University</td>
+						<td style="text-align:center">Fall 2017</td>
+					</tr>
+					<tr onmouseover="showDescription('Developed a tool in Java that assists NASA Ames researchers in the statistical analysis of data generated by VESGEN, a vessel imaging program.');" onmouseout="hideDescription('hidden');">
+						<td style="text-align:center">VESGEN Data Analysis Tool</td>
+						<td style="text-align:center">NASA Ames Research Center</td>
+						<td style="text-align:center">Summer 2016</td>
+					</tr>
+					<tr onmouseover="showDescription('Analyzed the competitive advantage of a company.');" onmouseout="hideDescription('hidden');">
+						<td style="text-align:center">Case Study Project</td>
+						<td style="text-align:center">Carnegie Mellon University</td>
+						<td style="text-align:center">Spring 2018</td>
+					</tr>
+
+				</table>
+				<div id = "description"></div>
+			</div>
+
+			<div id = "sidebar">
+				<h3>Find Me</h3>
+				Bradley Chen <br/>
+				<a href = "http://www.cmu.edu" target = "_blank">Carnegie Mellon University</a><br/>
+				5000 Forbes Avenue<br/>
+				Pittsburgh, PA 15289<br/>
+				408-507-1252<br/>
+				<a href = "mailto: bradleychen@cmu.edu"><img src = "images/email.png"></a>
+				<a href = "https://www.linkedin.com/in/bradhchen" target = "_blank"><img src = "images/linkedin.png"></a>
+				<a href = "https://www.facebook.com/bradhchen" target = "_blank"><img src = "images/facebook.png"></a>
+
+			</div>
+
+
+			<footer>
+				<hr/>
+				&copy; Bradley Chen 2018<br/>
+				<a href = "mailto: bradleychen@cmu.edu">Email Me</a>
+				<a href = "http://cmu.edu" target = "_blank">Carnegie Mellon University</a>
+			</footer>
+		</div>
+
+	</body>
+
+
+
+	</html>
